@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchOddsData } from "../pages/api/fetchOdds"; // Adjust the import path as necessary
-import Layout from "@/components/Layout";
+import Layout from "../components/layout";
 
 export default function Odds() {
     const [oddsData, setOddsData] = useState([]);
