@@ -1,16 +1,14 @@
-import { useEffect, useState } from "react";
-import { fetchOddsData } from "../pages/api/fetchOdds"; // Adjust the import path as necessary
-import Odds from "../pages/odds"; // Adjust the import path as necessary
-import Layout from "../components/Layout"; // Adjust the import path as necessary
-
+import Link from 'next/link';
+import Layout from '../components/Layout';
 
 export default function Home() {
-  
   return (
     <Layout title="Home page" description="Home">
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Odds />
-    </main>
+      <div className="text-center">
+        <Link href="/odds">
+          <p className="text-lg text-blue-500 hover:underline">Go to Odds Page</p>
+        </Link>
+      </div>
     </Layout>
   );
 }

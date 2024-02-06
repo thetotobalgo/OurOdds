@@ -1,9 +1,10 @@
 export default function Footer() {
-  return (
-    <footer>
-      <div>
-        <h1>Contact</h1>
-      </div>
-    </footer>
-  )
-}
+    return (
+      <footer className="w-full text-center p-4 bg-gray-100 mt-auto">
+        <div>
+          <h1>Contact</h1>
+        </div>
+      </footer>
+    );
+  }
+  
