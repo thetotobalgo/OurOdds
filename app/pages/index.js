@@ -7,6 +7,7 @@ export default function Home() {
       <div className="text-center">
         <Link href="/odds">
           <p className="text-lg text-blue-500 hover:underline">Go to Odds Page</p>
+          
         </Link>
       </div>
     </Layout>

@@ -1,6 +1,5 @@
-import "@/styles/globals.css";
-
-import { initializeApp } from "firebase/app";
+// Import the functions you need from the SDKs you need
+import { getApp, getApps, initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
@@ -13,9 +12,8 @@ const firebaseConfig = {
   measurementId: "G-NHLL992MGV"
 };
 
-export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+// Initialize Firebase
+const app = getApps().length ? getApp(): initializeApp(firebaseConfig)
+const auth = getAuth();
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+export { app, auth };
