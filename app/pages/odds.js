@@ -37,6 +37,11 @@ export default function Odds() {
         fetchData();
     }, [region]);
 
+    fetch('api/pythonRun')
+    .then(data => console.log(data))
+    
+
+
     return (
         <Layout title="odds page" description="Home">
             <div className="flex flex-col items-center justify-center ">

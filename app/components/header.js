@@ -10,6 +10,7 @@ export default function Header() {
                     <Link href="/">Home</Link>
                     <Link href="/calculator">Calculator</Link>
                     <Link href="/odds">Odds</Link>
+                    <Link href="/games">FR Odds</Link>
                 </div>
 
                 <Link href="/login">Login</Link>
