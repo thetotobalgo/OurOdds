@@ -8,7 +8,7 @@ export default function ArbitrageCalculator() {
     const [profit, setProfit] = useState(0);
 
     const calculateBets = () => {
-        // Calculate the total value based on the odds
+
         const V = 1 / odds.way1 + 1 / odds.way2 + 1 / odds.way3;
         const bet1 = (amount / odds.way1) / V;
         const bet2 = (amount / odds.way2) / V;
@@ -18,7 +18,7 @@ export default function ArbitrageCalculator() {
         const profit3 = bet3 * odds.way3 - amount;
 
         setBets({ way1: bet1, way2: bet2, way3: bet3 });
-        setProfit(profit1); // Assumes profit is the same for all outcomes if arbitrage exists
+        setProfit(profit1);
     };
 
     const handleSubmit = (e) => {
